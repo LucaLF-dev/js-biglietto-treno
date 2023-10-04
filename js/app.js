@@ -1,7 +1,7 @@
 // # Calcolo biglietto del treno
 
 // ### Il programma dovrà chiedere all’utente il numero di chilometri che vuole percorrere e l’età del passeggero.
-    
+
 // #### Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
 //     - il prezzo del biglietto è definito in base ai km (0.21 € al km)
 //     - va applicato uno sconto del 20% per i minorenni
@@ -21,7 +21,7 @@ console.log(ageUser)
 //   - dichiarare una variabile sul prezzo del biglietto al km di 0,21 euro
 const priceKm = 0.21
 console.log(priceKm)
-//   - dichiarare una variabile prezzo base dove concateniamo i km con il prezzo base al km del biglietto 
+//   - dichiarare una variabile prezzo base dove concateniamo i km con il prezzo base al km del biglietto
 const basePrice = kmUser * priceKm
 console.log(basePrice)
 // - calcolo dello sconto in base all'età
@@ -36,32 +36,33 @@ console.log(discountUnder)
 // - prezzo finale del biglietto sottraendo al prezzo base lo sconto
 let finalPrice
 
-//   - concatenare prezzo base con lo sconto 
+
+//   - concatenare prezzo base con lo sconto
 if (ageUser < 18) {
     finalPrice = basePrice - discountUnder
-    console.log(finalPrice)
+    
 //     - SE < 18 anni:
 //       - sconto del 20%
 } else if (ageUser > 65) {
     finalPrice = basePrice - discountOver
-    console.log(finalPrice)
+    
 //     - ALTRIMENTI SE > 65 anni
 //       - sconto del 40%
 } else {
-    
+
 //     - ALTRIMENTI
 //       - nessuno sconto
     finalPrice = basePrice;
 }
 
-console.log(finalPrice); // undefined
+console.log(finalPrice)
 
 
-function financial(finalPrice) {
-    return Number.parseFloat(finalPrice).toFixed(2);
-}
+// function financial(finalPrice) {
+//      return Number.parseFloat(finalPrice).toFixed(2);
+//  }
 
-console.log(financial(finalPrice));
+// console.log(financial(finalPrice));
 
 // - stampare il prezzo finale sull' HTML
 // - recuperare con js l' elementi del Dom con id = finalPrice
@@ -69,4 +70,4 @@ const finalPriceDomElement = document.getElementById('finalPrice')
 console.dir(finalPriceDomElement)
 
 // - modificare l'inner HTML dello span con la variabile finalPrice
-finalPriceDomElement.innerHTML = finalPrice
+finalPriceDomElement.innerHTML = finalPrice.toFixed(2) + '' + 'euro'; //financial(finalPrice)
