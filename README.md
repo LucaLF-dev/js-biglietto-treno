@@ -20,13 +20,14 @@
   - dichiarare variabili  sconto in euro
     - 40%
     - 20%
-  - SE < 18 anni:
-    - sconto del 20%
-  - ALTRIMENTI SE > 65 anni
-    - sconto del 40%
-  - ALTRIMENTI
-    - nessuno sconto 
-- prezzo finale del biglietto sottraendo al prezzo base lo sconto
-  - inizializzare una variabile prezzo finale
-  - concatenare prezzo base con lo sconto 
-- stampare prezo finale sull' HTML
+- prezzo finale del biglietto sottraendo al prezzo base lo sconto 
+  - creare una variabile prezzo finale 
+  -  - concatenare prezzo base con lo sconto   
+    - SE < 18 anni:
+      - sconto del 20
+    - ALTRIMENTI SE > 65 anni
+      - sconto del 40%
+    - ALTRIMENTI
+      - nessuno sconto 
+
+- stampare il prezzo finale sull' HTML

@@ -37,17 +37,21 @@ console.log(discountUnder)
 //   - creare una variabile prezzo finale
 let finalPrice1
 let finalPrice2
+let message
 //   - concatenare prezzo base con lo sconto 
 if (ageUser < 18) {
-    let finalPrice1 = basePrice - discountUnder
+    finalPrice1 = basePrice - discountUnder
     console.log(finalPrice1)
 //     - SE < 18 anni:
 //       - sconto del 20%
-}
-
+} else if (ageUser > 65) {
+    finalPrice2 = basePrice - discountOver
+    console.log(finalPrice2)
 //     - ALTRIMENTI SE > 65 anni
 //       - sconto del 40%
+} else {
+    message = ' qualcosa è andato storto'
 //     - ALTRIMENTI
 //       - nessuno sconto 
-
-// - stampare prezo finale sull' HTML
+}
+// - stampare il prezzo finale sull' HTML
