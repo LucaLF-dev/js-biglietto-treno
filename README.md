@@ -10,8 +10,20 @@
 
 
 - chiedere all' utente in numero di km che vuole percorrere
+  - inizializzare la variabile sui km
 - chiedere l' età all' utente
+  - inizializzare la variabile sull età
 - calcolo prezzo base del biglietto in base ai km
+  - dichiarare una variabile sul prezzo del biglietto al km di 0,21 euro
+  - dichiarare una variabile prezzo base dove concateniamo i km con il prezzo base al km del biglietto 
 - calcolo dello sconto in base all'età
+  - SE < 18 anni:
+    - sconto del 20%
+  - ALTRIMENTI SE > 65 anni
+    - sconto del 40%
+  - ALTRIMENTI
+    - nessuno sconto 
 - prezzo finale del biglietto sottraendo al prezzo base lo sconto
+  - inizializzare una variabile prezzo finale
+  - concatenare prezzo base con lo sconto 
 - stampare prezo finale sull' HTML
