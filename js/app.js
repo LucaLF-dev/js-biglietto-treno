@@ -19,7 +19,11 @@ const ageUser = prompt(' inserisci la tua età ')
 console.log(ageUser)
 // - calcolo prezzo base del biglietto in base ai km
 //   - dichiarare una variabile sul prezzo del biglietto al km di 0,21 euro
+const priceKm =  0.21 
+console.log(priceKm)
 //   - dichiarare una variabile prezzo base dove concateniamo i km con il prezzo base al km del biglietto 
+const basePrice = kmUser * priceKm
+console.log(basePrice)
 // - calcolo dello sconto in base all'età
 //   - SE < 18 anni:
 //     - sconto del 20%
