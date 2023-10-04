@@ -25,6 +25,13 @@ console.log(priceKm)
 const basePrice = kmUser * priceKm
 console.log(basePrice)
 // - calcolo dello sconto in base all'età
+//   - dichiarare variabili  sconto in euro
+//       - 40%
+const discountOver = basePrice * ( 40 / 100)
+console.log(discountOver)
+//       - 20%
+const discountUnder = basePrice * ( 20 / 100)
+console.log(discountUnder)
 //   - SE < 18 anni:
 //     - sconto del 20%
 //   - ALTRIMENTI SE > 65 anni
