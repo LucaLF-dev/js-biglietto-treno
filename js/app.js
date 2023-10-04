@@ -35,24 +35,28 @@ console.log(discountUnder)
 
 // - prezzo finale del biglietto sottraendo al prezzo base lo sconto
 //   - creare una variabile prezzo finale
-let finalPrice1
-let finalPrice2
-let message
+let finalPrice
+
 //   - concatenare prezzo base con lo sconto 
 if (ageUser < 18) {
-    finalPrice1 = basePrice - discountUnder
-    console.log(finalPrice1)
+    finalPrice = basePrice - discountUnder
+    console.log(finalPrice)
 //     - SE < 18 anni:
 //       - sconto del 20%
 } else if (ageUser > 65) {
-    finalPrice2 = basePrice - discountOver
-    console.log(finalPrice2)
+    finalPrice = basePrice - discountOver
+    console.log(finalPrice)
 //     - ALTRIMENTI SE > 65 anni
 //       - sconto del 40%
 } else {
-    message = ' qualcosa è andato storto'
+    
 //     - ALTRIMENTI
-//       - nessuno sconto 
+//       - nessuno sconto
+    finalPrice = basePrice;
 }
+
+// toFixed()
+
+console.log(finalPrice); // undefined
 
 // - stampare il prezzo finale sull' HTML
