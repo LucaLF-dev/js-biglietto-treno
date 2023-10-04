@@ -34,7 +34,6 @@ const discountUnder = basePrice * ( 20 / 100)
 console.log(discountUnder)
 
 // - prezzo finale del biglietto sottraendo al prezzo base lo sconto
-//   - creare una variabile prezzo finale
 let finalPrice
 
 //   - concatenare prezzo base con lo sconto 
@@ -55,8 +54,13 @@ if (ageUser < 18) {
     finalPrice = basePrice;
 }
 
-// toFixed()
-
 console.log(finalPrice); // undefined
+
+
+function financial(finalPrice) {
+    return Number.parseFloat(finalPrice).toFixed(2);
+}
+
+console.log(financial(finalPrice));
 
 // - stampare il prezzo finale sull' HTML
