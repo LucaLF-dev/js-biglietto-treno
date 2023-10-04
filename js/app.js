@@ -11,11 +11,11 @@
 
 // - chiedere all' utente in numero di km che vuole percorrere
 //   - inizializzare la variabile sui km
-const kmUser = prompt(' quanti km vuole percorrere ?')
+const kmUser =parseInt(prompt(' quanti km vuole percorrere ?'))
 console.log(kmUser)
 // - chiedere l' età all' utente
 //   - inizializzare la variabile sull età
-const ageUser = prompt(' inserisci la tua età ( tra 1 e 99 anni )')
+const ageUser = parseInt(prompt(' inserisci la tua età ( tra 1 e 99 anni )'))
 console.log(ageUser)
 // - calcolo prezzo base del biglietto in base ai km
 //   - dichiarare una variabile sul prezzo del biglietto al km di 0,21 euro
@@ -54,4 +54,5 @@ if (ageUser < 18) {
 //     - ALTRIMENTI
 //       - nessuno sconto 
 }
+
 // - stampare il prezzo finale sull' HTML
