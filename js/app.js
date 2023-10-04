@@ -64,3 +64,9 @@ function financial(finalPrice) {
 console.log(financial(finalPrice));
 
 // - stampare il prezzo finale sull' HTML
+// - recuperare con js l' elementi del Dom con id = finalPrice
+const finalPriceDomElement = document.getElementById('finalPrice')
+console.dir(finalPriceDomElement)
+
+// - modificare l'inner HTML dello span con la variabile finalPrice
+finalPriceDomElement.innerHTML = finalPrice
