@@ -17,6 +17,9 @@
   - dichiarare una variabile sul prezzo del biglietto al km di 0,21 euro
   - dichiarare una variabile prezzo base dove concateniamo i km con il prezzo base al km del biglietto 
 - calcolo dello sconto in base all'età
+  - dichiarare variabili  sconto in euro
+    - 40%
+    - 20%
   - SE < 18 anni:
     - sconto del 20%
   - ALTRIMENTI SE > 65 anni
