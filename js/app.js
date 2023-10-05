@@ -70,4 +70,4 @@ const finalPriceDomElement = document.getElementById('finalPrice');
 console.dir(finalPriceDomElement);
 
 // - modificare l'inner HTML dello span con la variabile finalPrice
-finalPriceDomElement.innerHTML = finalPrice.toFixed(2) + ' ' + 'euro'; //financial(finalPrice)
+finalPriceDomElement.innerHTML = finalPrice.toFixed(2) +  '  euro'; //financial(finalPrice)
