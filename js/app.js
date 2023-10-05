@@ -11,7 +11,7 @@
 
 // - chiedere all' utente in numero di km che vuole percorrere
 //   - inizializzare la variabile sui km
-const kmUser =parseInt(prompt(' quanti km vuole percorrere ?'));
+const kmUser =parseFloat(prompt(' quanti km vuole percorrere ?'));
 console.log(kmUser);
 // - chiedere l' età all' utente
 //   - inizializzare la variabile sull età
